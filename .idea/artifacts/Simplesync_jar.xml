@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Simplesync:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/server2</output-path>
+    <root id="archive" name="Simplesync.jar">
+      <element id="module-output" name="Simplesync" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

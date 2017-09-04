@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_maincontrol">
+   <children>
+      <Label fx:id="a" layoutX="8.0" layoutY="2.0" prefHeight="33.0" prefWidth="163.0" text="Label :" />
+      <Button layoutX="48.0" layoutY="323.0" mnemonicParsing="false" onAction="#pokreniclick" prefHeight="33.0" prefWidth="81.0" text="Run" />
+      <Button layoutX="170.0" layoutY="323.0" mnemonicParsing="false" onAction="#zaustaviclick" prefHeight="33.0" prefWidth="81.0" text="Stop" />
+      <TextField fx:id="dirpath" editable="false" layoutX="48.0" layoutY="274.0" onMouseClicked="#openfilepath" prefHeight="33.0" prefWidth="163.0" promptText="Syndir filepath" />
+      <Button layoutX="215.0" layoutY="274.0" mnemonicParsing="false" onAction="#choosedir" prefHeight="33.0" prefWidth="32.0" text="Button" />
+      <Label fx:id="warning" layoutX="86.0" layoutY="299.0" prefHeight="33.0" prefWidth="143.0" text="First stop the program!" textFill="#834a4a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="usern" alignment="CENTER_RIGHT" layoutX="151.0" layoutY="2.0" prefHeight="33.0" prefWidth="81.0" />
+      <Button layoutX="239.0" layoutY="6.0" mnemonicParsing="false" onAction="#logoutclick" prefHeight="25.0" prefWidth="56.0" text="logout" />
+      <ProgressBar fx:id="bar1" layoutX="37.0" layoutY="242.0" prefHeight="25.0" prefWidth="217.0" progress="0.0">
+         <effect>
+            <Blend>
+               <topInput>
+                  <Bloom>
+                     <input>
+                        <ColorInput paint="#5bafdb" />
+                     </input>
+                  </Bloom>
+               </topInput>
+            </Blend>
+         </effect></ProgressBar>
+      <Label fx:id="filename" alignment="CENTER" layoutX="3.0" layoutY="225.0" prefHeight="17.0" prefWidth="286.0" text="Label" />
+      <ImageView fx:id="logo" fitHeight="124.0" fitWidth="163.0" layoutX="81.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Accordion layoutY="-74.0" />
+   </children>
+</Pane>

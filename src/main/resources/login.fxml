@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="213.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_logincontrol">
+   <children>
+      <Button layoutX="34.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="69.0" text="Login" />
+      <Button layoutX="116.0" layoutY="245.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="69.0" text="Register" />
+      <TextField id="username1" fx:id="usr" alignment="CENTER" layoutX="34.0" layoutY="177.0" onKeyPressed="#textentered" prefHeight="25.0" prefWidth="149.0" promptText="username">
+         <effect>
+            <Blend />
+         </effect></TextField>
+      <PasswordField fx:id="psw" alignment="CENTER" layoutX="34.0" layoutY="210.0" onKeyPressed="#textentered" promptText="password" />
+      <Label fx:id="krivpass" alignment="CENTER" layoutX="-43.0" layoutY="270.0" prefHeight="17.0" prefWidth="300.0" text="Krivi password, pokušajte ponovo!" textFill="#bc5a5a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
